@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Detector de Fake News</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+
+            background:#1d1d1d;
+            color:#d9d9d9;
+
+            font-family: Helvetica, Arial, sans-serif;
+
+            height:100vh;
+
+            overflow:hidden;
+        }
+
+        .container{
+
+            display:flex;
+
+            height:100vh;
+        }
+
+        /* LADO ESQUERDO */
+
+        .left{
+
+            width:50%;
+
+            padding:60px;
+        }
+
+        h1{
+
+            color:#609fd3;
+
+            font-size:48px;
+
+            margin-bottom:40px;
+
+            border-bottom:3px solid #d9d9d9;
+
+            padding-bottom:20px;
+
+            width:90%;
+        }
+
+        textarea{
+
+            width:90%;
+            height:260px;
+
+            background:#1d1d1d;
+
+            border:3px solid #d9d9d9;
+
+            color:#d9d9d9;
+
+            padding:20px;
+
+            font-size:18px;
+
+            resize:none;
+
+            outline:none;
+        }
+
+        textarea::placeholder{
+
+            color:#888;
+        }
+
+        button{
+
+            margin-top:25px;
+
+            background:#609fd3;
+
+            color:#1d1d1d;
+
+            border:none;
+
+            padding:14px 40px;
+
+            font-size:18px;
+
+            font-weight:bold;
+
+            cursor:pointer;
+
+            transition:0.2s;
+        }
+
+        button:hover{
+
+            opacity:0.9;
+        }
+
+        .resultado{
+
+            margin-top:45px;
+
+            width:90%;
+        }
+
+        .resultado h2{
+
+            color:#609fd3;
+
+            margin-bottom:20px;
+
+            border-bottom:3px solid #d9d9d9;
+
+            padding-bottom:10px;
+        }
+
+        .resultado p{
+
+            margin-top:15px;
+
+            font-size:22px;
+        }
+
+        /* LINHA CENTRAL */
+
+        .divider{
+
+            width:2px;
+
+            background:#d9d9d9;
+
+            opacity:0.4;
+
+            height:100vh;
+        }
+
+        /* LADO DIREITO */
+
+        .right{
+
+            width:50%;
+
+            padding:60px;
+
+            overflow-y:auto;
+        }
+
+        .preview-title{
+
+            color:#609fd3;
+
+            font-size:36px;
+
+            border-bottom:3px solid #d9d9d9;
+
+            padding-bottom:15px;
+
+            margin-bottom:30px;
+        }
+
+        .preview-text{
+
+            font-size:22px;
+
+            line-height:2.0;
+
+            word-break:break-word;
+        }
+
+        .highlight{
+
+            background:#609fd3;
+
+            color:#1d1d1d;
+
+            padding:2px 5px;
+
+            font-weight:bold;
+        }
+
+        .motivos{
+
+    margin-top:50px;
+
+    border-top:2px solid #d9d9d9;
+
+    padding-top:25px;
+}
+
+.motivos h2{
+
+    color:#609fd3;
+
+    margin-bottom:20px;
+}
+
+.motivos p{
+
+    margin-top:12px;
+
+    font-size:20px;
+
+    line-height:1.6;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ESQUERDA -->
+
+        <div class="left">
+
+            <h1>Detector de Fake News</h1>
+
+            <form method="POST">
+
+                <textarea
+                    name="noticia"
+                    placeholder="Digite a notícia..."
+                ></textarea>
+
+                <br>
+
+                <button type="submit">
+                    ANALISAR
+                </button>
+
+            </form>
+
+            {% if resultado %}
+
+            <div class="resultado">
+
+                <h2>Resultado</h2>
+
+                <p>
+                    <strong>Classificação:</strong>
+                    {{ resultado }}
+                </p>
+
+                <p>
+                    <strong>Probabilidade de ser falso:</strong>
+                    {{ porcentagem }}%
+                </p>
+
+                <p>
+                    <strong>Nível de confiança:</strong>
+                    {{ nivel }}
+                </p>
+
+            </div>
+
+            {% endif %}
+
+        </div>
+
+        <!-- LINHA -->
+
+        <div class="divider"></div>
+
+        <!-- DIREITA -->
+
+        <div class="right">
+
+            {% if texto_destacado %}
+
+            <h2 class="preview-title">
+                Texto Analisado
+            </h2>
+
+            <div class="preview-text">
+
+                {{ texto_destacado|safe }}
+
+                
+
+            </div>
+
+            <div class="motivos">
+
+    <h2>Motivos da Classificação</h2>
+
+    {% for motivo in motivos %}
+
+        <p>• {{ motivo }}</p>
+
+    {% endfor %}
+
+</div>
+           
+
+
+</div>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
