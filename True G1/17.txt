@@ -1,0 +1,34 @@
+A Tata Electronics informou nesta segunda-feira que detectou um recente "incidente de segurança cibernética", após pesquisadores afirmarem que o World Leaks publicou supostos documentos de design e especificação de componentes da Apple e da Tesla, ambas clientes do grupo indiano. As informações são da agência Reuters.
+
+O grupo de ransomware publicou mais de 200 mil arquivos na dark web, disseram os pesquisadores de segurança à Reuters.
+
+"Há algumas semanas, a Tata Electronics identificou um incidente de segurança cibernética em alguns de nossos sistemas. Nossos protocolos de resposta foram implantados imediatamente, e o incidente não teve impacto em nossas operações em todos os negócios, que permanecem inalteradas", disse a Tata Electronics à Reuters em um comunicado.
+
+A Apple estava investigando a violação e uma "análise completa estava em andamento", disse uma fonte familiarizada com o assunto, acrescentando que a Tata havia recebido um pedido de resgate relacionado ao incidente.
+A Apple não respondeu aos pedidos de comentário. A Tata Electronics se recusou a comentar sobre o pedido de resgate.
+
+A Tata responde atualmente por cerca de um terço da produção de iPhones da Apple na Índia, com a Foxconn representando o restante.
+
+A violação é o revés mais recente para a cadeia de suprimentos da Apple na Índia, onde a Tata enfrenta escrutínio sobre a suposta contaminação de terras agrícolas perto de uma de suas fábricas de peças de iPhone, informou a Reuters.
+
+A Tata está emergindo como um dos parceiros de fabricação mais importantes da Apple fora da China, uma expansão que é uma pedra angular do esforço do primeiro-ministro Narendra Modi para tornar a Índia uma potência na fabricação de eletrônicos.
+
+A Tata foi atingida por um ataque cibernético em seu grupo britânico Jaguar Land Rover no ano passado, o que resultou em uma paralisação de seis semanas na produção.
+
+A Equipe de Resposta a Emergências Computacionais da Índia, uma unidade do ministério de TI da Índia que supervisiona incidentes cibernéticos, não respondeu imediatamente aos e-mails da Reuters buscando comentários.
+
+O World Leaks, que anteriormente assumiu a responsabilidade por uma invasão na Nike, disse em seu site na dark net que estava publicando dados roubados da Tata Electronics.
+
+A Reuters não pôde verificar imediatamente a autenticidade dos dados e não pôde contatar imediatamente o World Leaks para comentários.
+
+O site do World Leaks diz que os dados da Tata Electronics compreendem mais de 200 mil arquivos, totalizando mais de 630 gigabytes.
+
+Um banco de dados em seu site mostra vários supostos arquivos e pastas da Apple, alguns intitulados "com.apple.factorydata", e documentos que se referem a "especificação de material".
+
+O pesquisador indiano de segurança cibernética Rajshekhar Rajaharia, que revisou os arquivos da Tata no World Leaks para a Reuters, disse que eles também contêm e-mails, registros de eventos que abrangem vários anos e cópias de passaportes de funcionários, incluindo cidadãos estrangeiros.
+
+Rajaharia já aconselhou a polícia indiana sobre incidentes cibernéticos anteriormente.
+
+O site só é acessível na dark web, ou dark net, fora do alcance dos mecanismos de busca.
+
+Um segundo pesquisador de segurança que revisou o vazamento de dados, Rakesh Krishnan, disse à Reuters que eles estavam acessíveis na dark web desde pelo menos 10 de junho.
