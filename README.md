@@ -29,6 +29,10 @@ A proposta não é substituir a verificação humana, mas atuar como uma ferrame
 
 ---
 
+<img src="Example.gif" width="700">
+
+---
+
 ## Exemplo
 O usuário insere uma notícia:
 
@@ -38,11 +42,11 @@ O governo anunciou novas medidas econômicas...
 
 O sistema retorna:
 
-✅ Possível Notícia Verdadeira
+Possível Notícia Verdadeira
 
 ou
 
-❌ Possível Fake News
+Possível Fake News
 
 Além disso:
 
